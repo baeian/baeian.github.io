@@ -1,4 +1,3 @@
-
 body {
    font-family: 'SF Pro Display';
    color: #1d1d1f;
@@ -7,12 +6,14 @@ body {
    overflow-x: hidden;
 }
 
-li,ul {
+li,
+ul {
    display: inline-block;
    margin: 0;
    padding: 0;
    list-style: none;
 }
+
 .menu {
    z-index: 5;
    background-color: rgba(255, 255, 255, 0.72);
@@ -85,25 +86,29 @@ li {
    padding-top: 15vw;
    padding-bottom: 6.6vw;
 }
-.card{
+
+.card {
    overflow: hidden;
    border-radius: 2.8vw;
 }
-#ui1{
+
+#ui1 {
    height: 120%;
    display: flex;
    position: absolute;
    top: 7vw;
    left: 20vw;
 }
-#ui2{
+
+#ui2 {
    height: 120%;
    display: flex;
    position: absolute;
    bottom: 7vw;
    right: 2.75vw;
 }
-#ux1{
+
+#ux1 {
    z-index: 4;
    position: absolute;
    width: 45%;
@@ -112,13 +117,27 @@ li {
    right: 2vw;
 }
 
-#ux2{
+#ux2 {
    z-index: 3;
    position: absolute;
    width: 50%;
    display: flex;
    top: 7vw;
    right: 0vw;
+}
+
+#people {
+   display: grid;
+   padding-left: 3.25vw;
+   margin-top: 1vw;
+   grid-template-columns: repeat(3, 5vw);
+   grid-template-rows: repeat(2, 5vw);
+   grid-gap: 3vw;
+}
+
+.person {
+   width: 140%;
+   border-radius: 50%;
 }
 
 .design_value .box1 {
@@ -161,14 +180,14 @@ li {
 .title {
    text-align: left;
    font-size: 2.5vw;
-   font-weight: bold;
+   font-weight: 500;
    margin-bottom: 1vw;
 }
 
 .sub {
    text-align: left;
    font-size: 3vw;
-   font-weight:bold;
+   font-weight: bold;
    line-height: 3.5vw;
 }
 
@@ -178,10 +197,12 @@ li {
 }
 
 .design_value .card_wrap .box1 {
-   background-color: rgb(220, 236, 255);
+   background: linear-gradient(to right bottom, #e2f3ff, #e5eaff);
+   ;
    z-index: 0;
    position: relative;
 }
+
 .design_value .card_wrap .box2 {
    background-color: #fff;
    z-index: 0;
@@ -199,16 +220,17 @@ li {
 
 .design_value .card_wrap .box3 .text_wrap {
    text-align: center;
-   padding: 4vw 4vw 0px 4vw;
+   padding: 4vw 2vw 0px 2vw;
 }
 
 .card_wrap .card {
    box-shadow: 10px 20px 75px 15px rgba(29, 29, 31, 6%);
 }
+
 /*스킬*/
 .skill {
    z-index: 6;
-   padding-top: 15vw;
+   padding-top: 10vw;
    padding-bottom: 6.6vw;
 }
 
@@ -225,7 +247,6 @@ li {
 .skill .box3 {
    grid-column: 1/3;
    grid-row-start: 2;
-   position: relative;
 }
 
 .skill h1 {
@@ -234,15 +255,15 @@ li {
 }
 
 .skill .card_wrap .box1 .text_wrap {
-   padding: 4vw 4vw;
+   padding: 4vw 2vw 0 2vw;
 }
 
 .skill .card_wrap .box2 .text_wrap {
-   padding: 4vw 4vw;
+   padding: 4vw 2vw 0 2vw;
 }
 
 .skill .card_wrap .box3 .text_wrap {
-   padding: 10vw 4vw;
+   padding: 8vw 2vw;
 }
 
 .skill .card_wrap .box1 {
@@ -251,9 +272,42 @@ li {
 }
 
 .skill .card_wrap .box2 {
-   background-color: #E0ECFC;
+   background-color: #fff;
 }
 
 .skill .card_wrap .box3 {
-   background: linear-gradient(to right bottom, #CEE6F7, #D8E0FF);
+   position: relative;
+   background: linear-gradient(to right bottom, #e2f3ff, #e5eaff);
+}
+
+.html_css_js {
+   padding-left: 2.75vw;
+   margin-top: 3.5vw;
+   display: grid;
+   grid-template-columns: 8.5vw 8.5vw 8.5vw;
+   grid-gap: 0vw;
+}
+
+.adobe {
+   padding-left: 1.85vw;
+   margin-top: 3.5vw;
+   display: grid;
+   grid-template-columns: 8.5vw 8.5vw 8.5vw;
+   grid-gap: 0.75vw;
+}
+
+.html_css_js img {
+   height: 7vw;
+}
+
+.adobe img {
+   height: 7.5vw;
+}
+
+.skill .box3 img {
+   display: flex;
+   position: absolute;
+   width: 50%;
+   top: 3vw;
+   left: 24vw;
 }
