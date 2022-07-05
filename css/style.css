@@ -113,7 +113,7 @@ li {
    position: absolute;
    width: 45%;
    display: flex;
-   top: 9.5vw;
+   top: 8.75vw;
    right: 2vw;
 }
 
@@ -281,7 +281,7 @@ li {
 }
 
 .html_css_js {
-   padding-left: 2.75vw;
+   padding-left: 3.1vw;
    margin-top: 3.5vw;
    display: grid;
    grid-template-columns: 8.5vw 8.5vw 8.5vw;
