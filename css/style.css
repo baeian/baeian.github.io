@@ -286,27 +286,107 @@ li {
 }
 
 .design_value .card_wrap .box2 .img_wrap {
+   transform: rotateZ(-30deg);
+   top: -1vw;
+   left: -2vw;
    position: relative;
    display: inline-grid;
-   grid-template-columns: repeat(4, 7.5vw);
-   grid-template-rows: repeat(4, 7.5vw);
-   grid-gap: 1.5vw;
+   grid-template-columns: repeat(4, 6vw);
+   grid-template-rows: repeat(4, 6vw);
+   grid-gap: 4.5vw;
 }
 
-.design_value .card_wrap .box2 .img_wrap span{
+.design_value .card_wrap .box2 .img_wrap span {
    font-size: 6vw;
+   color: rgba(255, 255, 255, 10%);
+   position: absolute;
+   display: flex;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
 
-.design_value .card_wrap .box2 .img_wrap #command{
+.design_value .card_wrap .box2 .img_wrap #command {
    grid-column: 1/2;
-   position: absolute;
-   display: flex;
+   grid-row-start: 1;
 }
 
-.design_value .card_wrap .box2 .img_wrap #thumb {
+.design_value .card_wrap .box2 .img_wrap #verified {
    grid-column: 2/3;
-   position: absolute;
-   display: flex;
+   grid-row-start: 1;
+}
+
+.design_value .card_wrap .box2 .img_wrap #crop {
+   grid-column: 3/4;
+   grid-row-start: 1;
+}
+
+.design_value .card_wrap .box2 .img_wrap #shopping_cart {
+   grid-column: 4/5;
+   grid-row-start: 1;
+}
+
+.design_value .card_wrap .box2 .img_wrap #explore {
+   grid-column: 1/2;
+   grid-row-start: 2;
+}
+
+.design_value .card_wrap .box2 .img_wrap #content_copy {
+   grid-column: 2/3;
+   grid-row-start: 2;
+}
+
+.design_value .card_wrap .box2 .img_wrap #cut {
+   grid-column: 3/4;
+   grid-row-start: 2;
+}
+
+.design_value .card_wrap .box2 .img_wrap #play_circle {
+   grid-column: 4/5;
+   grid-row-start: 2;
+}
+
+.design_value .card_wrap .box2 .img_wrap #equalizer {
+   grid-column: 1/2;
+   grid-row-start: 3;
+}
+
+.design_value .card_wrap .box2 .img_wrap #print {
+   grid-column: 2/3;
+   grid-row-start: 3;
+}
+
+.design_value .card_wrap .box2 .img_wrap #keyboard {
+   grid-column: 3/4;
+   grid-row-start: 3;
+}
+
+.design_value .card_wrap .box2 .img_wrap #wifi {
+   grid-column: 4/5;
+   grid-row-start: 3;
+}
+
+.design_value .card_wrap .box2 .img_wrap #verified_user {
+   grid-column: 1/2;
+   grid-row-start: 4;
+}
+
+.design_value .card_wrap .box2 .img_wrap #vpn_key {
+   grid-column: 2/3;
+   grid-row-start: 4;
+}
+
+.design_value .card_wrap .box2 .img_wrap #sensors {
+   grid-column: 3/4;
+   grid-row-start: 4;
+}
+
+.design_value .card_wrap .box2 .img_wrap #keyboard_voice {
+   grid-column: 4/5;
+   grid-row-start: 4;
 }
 
 .card_wrap .card {
@@ -405,7 +485,7 @@ li {
    right: -5%;
 }
 
-.address .box1 .img_wrap{
+.address .box1 .img_wrap {
    display: flex;
    position: relative;
    flex-direction: column;
@@ -418,7 +498,7 @@ li {
    height: 100%;
 }
 
-.address .box1 .insta_github_notion{
+.address .box1 .insta_github_notion {
    position: absolute;
    display: inline-grid;
    grid-template-columns: repeat(3, clamp(50px, 10vw, 200px));
