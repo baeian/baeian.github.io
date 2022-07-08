@@ -41,7 +41,7 @@ ul {
    width: 100%;
    position: fixed;
    text-align: center;
-   z-index: 5;
+   z-index: 1;
 }
 
 li {
@@ -53,13 +53,13 @@ li {
    text-align: left;
    font-size: clamp(15px, 2vw, 30px);
    font-weight: 500;
-
+   z-index: 3;
    margin-left: 0.25vw;
    margin-bottom: 0.5vw;
 }
 
 .sub {
-   z-index: 5;
+   z-index: 3;
    text-align: left;
    font-size: clamp(20px, 3.5vw, 45px);
    font-weight: 600;
@@ -103,19 +103,19 @@ li {
 
 .design_value {
    text-align: center;
-   z-index: 6;
+   z-index: 3;
    padding-bottom: 20vw;
 }
 
 .communication {
    text-align: center;
-   z-index: 6;
+   z-index: 3;
    padding-bottom: 20vw;
 }
 
 .address {
    text-align: center;
-   z-index: 6;
+   z-index: 3;
    padding-bottom: 10vw;
 }
 
@@ -224,6 +224,8 @@ li {
 }
 
 .address .card_wrap {
+   z-index: 3;
+   position: relative;
    display: inline-grid;
    grid-template-columns: repeat(2, clamp(150px, 35vw, 1000px));
    grid-template-rows: repeat(1, clamp(150px, 35vw, 1000px));
@@ -236,7 +238,7 @@ li {
 }
 
 .design_value .card_wrap .box1 {
-   background: linear-gradient(to right bottom, #e2f3ff, #e5eaff);
+   background-color: #fff;
    z-index: 0;
    position: relative;
 }
@@ -283,6 +285,30 @@ li {
    padding: 3vw 2vw 0px 2vw;
 }
 
+.design_value .card_wrap .box2 .img_wrap {
+   position: relative;
+   display: inline-grid;
+   grid-template-columns: repeat(4, 7.5vw);
+   grid-template-rows: repeat(4, 7.5vw);
+   grid-gap: 1.5vw;
+}
+
+.design_value .card_wrap .box2 .img_wrap span{
+   font-size: 6vw;
+}
+
+.design_value .card_wrap .box2 .img_wrap #command{
+   grid-column: 1/2;
+   position: absolute;
+   display: flex;
+}
+
+.design_value .card_wrap .box2 .img_wrap #thumb {
+   grid-column: 2/3;
+   position: absolute;
+   display: flex;
+}
+
 .card_wrap .card {
    box-shadow: 10px 20px 75px 15px rgba(29, 29, 31, 6%);
 }
@@ -326,7 +352,10 @@ li {
 }
 
 .address .card_wrap .box1 .text_wrap {
+   display: block;
    padding: 6.5vw 2vw;
+   position: absolute;
+   width: 24.5%;
 }
 
 .skill .card_wrap .box1 {
@@ -376,10 +405,78 @@ li {
    right: -5%;
 }
 
+.address .box1 .img_wrap{
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   top: 0;
+   left: 30%;
+   width: 70%;
+   height: 100%;
+}
+
+.address .box1 .insta_github_notion{
+   position: absolute;
+   display: inline-grid;
+   grid-template-columns: repeat(3, clamp(50px, 10vw, 200px));
+   grid-template-rows: clamp(50px, 10vw, 200px);
+   grid-gap: 4.5vw;
+}
+
+#instagram {
+   display: flex;
+   position: absolute;
+   width: 100%;
+   grid-column: 1/2;
+}
+
+#github {
+   display: flex;
+   position: absolute;
+   width: 100%;
+   grid-column: 2/3;
+}
+
+#notion {
+   display: flex;
+   position: absolute;
+   width: 100%;
+   grid-column: 3/4;
+}
+
 .skill .box3 img {
    display: flex;
    position: absolute;
    width: clamp(25px, 50%, 1000px);
    top: 10%;
    right: 7.5%;
+}
+
+.address .card_wrap .card .bg_color {
+   display: flex;
+   position: absolute;
+   border-top-left-radius: 2.8vw;
+   border-bottom-left-radius: 2.8vw;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   height: 100%;
+   width: 30%;
+   background-color: #D9F0E9;
+}
+
+.design_value .card_wrap .card .bg_color {
+   display: flex;
+   position: absolute;
+   border-top-left-radius: 2.8vw;
+   border-bottom-left-radius: 2.8vw;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   height: 100%;
+   width: 57.5%;
+   background: linear-gradient(to right bottom, #e2f3ff, #e5eaff)
 }
