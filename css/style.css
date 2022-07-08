@@ -8,12 +8,12 @@ body {
    overflow-x: hidden;
 }
 
-footer{
+footer {
    background-color: #F5F5F7;
    padding: 0.5vw 0;
 }
 
-footer p{
+footer p {
    color: #6E6E73;
    text-align: center;
    margin: 0 auto;
@@ -29,7 +29,7 @@ ul {
 }
 
 .menu {
-   z-index: 15;
+   z-index: 10;
    background-color: rgba(255, 255, 255, 55%);
    backdrop-filter: blur(20px);
    display: inline-block;
@@ -53,7 +53,7 @@ ul {
    width: 100%;
    position: fixed;
    text-align: center;
-   z-index: 1;
+   z-index: 10;
 }
 
 li {
@@ -93,17 +93,34 @@ img {
 }
 
 .top {
+   position: relative;
    display: block;
    margin: 0 auto;
    height: 40vw;
    text-align: center;
-   padding: 12vw 0px 12vw;
+   padding-top: 12vw;
    z-index: 1;
+   background-image: url(/images/top_bg.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-attachment: fixed;
+}
+
+.top .bg_color {
+   z-index: -1;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 55%), rgba(0, 0, 0, 75%));
+   backdrop-filter: blur(1.75px);
 }
 
 .top #main {
+   z-index: 9;
    font-weight: bold;
    text-align: center;
+   color: #fff;
 }
 
 .top #main #name {
@@ -116,26 +133,36 @@ img {
    letter-spacing: -0.3vw;
 }
 
-.top #main #gap {
+.top #main #keyboard_arrow_down{
+   font-size: 3vw;
+   color: #c6c6c6;
+}
+
+.top #main .gap {
    height: 3vw;
+}
+
+.top #main .gap2 {
+   height: 7.5vw;
 }
 
 .design_value {
    text-align: center;
    z-index: 3;
-   padding-bottom: 20vw;
+   padding-top: 4vw;
+   padding-bottom: 17.5vw;
 }
 
 .communication {
    text-align: center;
    z-index: 3;
-   padding-bottom: 20vw;
+   padding-bottom: 17.5vw;
 }
 
 .address {
    text-align: center;
    z-index: 3;
-   padding-bottom: 10vw;
+   padding-bottom: 7.5vw;
 }
 
 .card {
@@ -161,7 +188,7 @@ img {
 
 #people {
    display: inline-grid;
-   margin-top: 1%;
+   margin-top: 5%;
    grid-template-columns: repeat(3, clamp(42.5px, 10vw, 1000px));
    grid-template-rows: repeat(2, clamp(42.5px, 10vw, 1000px));
    grid-gap: 0.75vw;
@@ -306,12 +333,12 @@ img {
 
 .design_value .card_wrap .box2 .img_wrap {
    transform: rotateZ(-30deg);
-   top: -1vw;
-   left: -2vw;
+   top: -7vw;
+   left: 0vw;
    position: relative;
    display: inline-grid;
-   grid-template-columns: repeat(4, 6vw);
-   grid-template-rows: repeat(4, 6vw);
+   grid-template-columns: repeat(5, 6vw);
+   grid-template-rows: repeat(5, 6vw);
    grid-gap: 4.5vw;
 }
 
@@ -330,12 +357,12 @@ img {
 
 .design_value .card_wrap .box2 .img_wrap #command {
    grid-column: 1/2;
-   grid-row-start: 1;
+   grid-row-start: 4;
 }
 
 .design_value .card_wrap .box2 .img_wrap #verified {
-   grid-column: 2/3;
-   grid-row-start: 1;
+   grid-column: 3/4;
+   grid-row-start: 3;
 }
 
 .design_value .card_wrap .box2 .img_wrap #crop {
@@ -349,17 +376,12 @@ img {
 }
 
 .design_value .card_wrap .box2 .img_wrap #explore {
-   grid-column: 1/2;
-   grid-row-start: 2;
+   grid-column: 2/3;
+   grid-row-start: 3;
 }
 
 .design_value .card_wrap .box2 .img_wrap #content_copy {
    grid-column: 2/3;
-   grid-row-start: 2;
-}
-
-.design_value .card_wrap .box2 .img_wrap #cut {
-   grid-column: 3/4;
    grid-row-start: 2;
 }
 
@@ -374,13 +396,13 @@ img {
 }
 
 .design_value .card_wrap .box2 .img_wrap #print {
-   grid-column: 2/3;
-   grid-row-start: 3;
+   grid-column: 1/2;
+   grid-row-start: 2;
 }
 
 .design_value .card_wrap .box2 .img_wrap #keyboard {
-   grid-column: 3/4;
-   grid-row-start: 3;
+   grid-column: 2/3;
+   grid-row-start: 1;
 }
 
 .design_value .card_wrap .box2 .img_wrap #wifi {
@@ -389,8 +411,8 @@ img {
 }
 
 .design_value .card_wrap .box2 .img_wrap #verified_user {
-   grid-column: 1/2;
-   grid-row-start: 4;
+   grid-column: 3/4;
+   grid-row-start: 2;
 }
 
 .design_value .card_wrap .box2 .img_wrap #vpn_key {
@@ -404,18 +426,17 @@ img {
 }
 
 .design_value .card_wrap .box2 .img_wrap #keyboard_voice {
-   grid-column: 4/5;
-   grid-row-start: 4;
+   grid-column: 3/4;
+   grid-row-start: 5;
 }
 
 .card_wrap .card {
    box-shadow: 10px 20px 75px 15px rgba(29, 29, 31, 6%);
 }
 
-/*스킬*/
 .skill {
    z-index: 6;
-   padding-bottom: 20vw;
+   padding-bottom: 17.5vw;
    text-align: center;
 }
 
