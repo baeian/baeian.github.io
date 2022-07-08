@@ -8,6 +8,18 @@ body {
    overflow-x: hidden;
 }
 
+footer{
+   background-color: #F5F5F7;
+   padding: 0.5vw 0;
+}
+
+footer p{
+   color: #6E6E73;
+   text-align: center;
+   margin: 0 auto;
+   font-size: 1vw;
+}
+
 li,
 ul {
    display: inline-block;
@@ -66,6 +78,15 @@ li {
    line-height: clamp(22.5px, 4vw, 55px);
 }
 
+img {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
 .menu ul li a img {
    height: 0.9vw;
    min-height: 7.5px;
@@ -76,7 +97,7 @@ li {
    margin: 0 auto;
    height: 40vw;
    text-align: center;
-   padding: 12vw 0px 3vw;
+   padding: 12vw 0px 12vw;
    z-index: 1;
 }
 
@@ -86,15 +107,13 @@ li {
 }
 
 .top #main #name {
-   font-weight: bold;
-   font-size: 10vw;
-   letter-spacing: -1vw;
+   font-size: 8vw;
+   letter-spacing: -0.75vw;
 }
 
 .top #main #info {
-   font-weight: bold;
-   font-size: 6vw;
-   letter-spacing: -0.25vw;
+   font-size: 4vw;
+   letter-spacing: -0.3vw;
 }
 
 .top #main #gap {
