@@ -1,9 +1,10 @@
 html {
    scroll-behavior: smooth;
+   background-color: #FCFBFE;
 }
 
 body {
-   font-family: "SF Pro Display", "Apple Gothic", Helvetica, Arial, sans-serif;
+   font-family: "SF Pro Display", "Apple Gothic", "Poppins", Helvetica, Arial, sans-serif;
    margin: 0 auto;
    overflow-x: hidden;
 }
@@ -20,12 +21,13 @@ footer p {
    font-size: 1vw;
 }
 
-li,
-ul {
-   display: inline-block;
-   margin: 0;
-   padding: 0;
-   list-style: none;
+.menu .list {
+   display: flex;
+   flex-direction: row;
+   gap: 1em;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1.5% 0;
 }
 
 .menu {
@@ -33,20 +35,20 @@ ul {
    background-color: rgba(255, 255, 255, 55%);
    backdrop-filter: blur(20px);
    display: inline-block;
-   padding: 0 1vw;
    border-bottom: 0.75px solid rgba(0, 0, 0, 15%);
-   border-bottom-left-radius: 1vw;
-   border-bottom-right-radius: 1vw;
+   border-bottom-left-radius: 1.5vh;
+   border-bottom-right-radius: 1.5vh;
+   padding: 0 2.5%;
 }
 
-.menu ul li a {
+.menu .list a {
    display: flex;
+   text-align: center;
    line-height: normal;
-   padding: 0;
    text-decoration: none;
    color: #1d1d1f;
    font-weight: bold;
-   font-size: 1vw;
+   font-size: 2vh;
 }
 
 .header {
@@ -54,11 +56,6 @@ ul {
    position: fixed;
    text-align: center;
    z-index: 10;
-}
-
-li {
-   justify-content: center;
-   margin: 0.5vw;
 }
 
 .title {
@@ -87,18 +84,21 @@ img {
    user-select: none;
 }
 
-.menu ul li a img {
-   height: 0.9vw;
-   min-height: 7.5px;
+.menu .list a .material-symbols-rounded {
+   font-size: 3vh;
+   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+   color: #1d1d1f;
 }
 
 .top {
+   align-items: center;
    position: relative;
-   display: block;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
    margin: 0 auto;
    height: 100vh;
    text-align: center;
-   padding-top: 12vw;
    z-index: 1;
    background-image: url(/images/top_bg.png);
    background-repeat: no-repeat;
@@ -127,6 +127,10 @@ img {
 }
 
 .top #main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    position: relative;
    z-index: 9;
    font-weight: bold;
@@ -135,18 +139,20 @@ img {
 }
 
 .top #main #name {
-   font-size: 8vw;
+   display: flex;
+   font-size: 8vh;
    letter-spacing: -0.75vw;
 }
 
 .top #main #info {
-   font-size: 4vw;
+   display: flex;
+   font-size: 4vh;
    letter-spacing: -0.3vw;
 }
 
 .top #main #keyboard_arrow_down {
    display: inline-block;
-   font-size: 6vw;
+   font-size: 7.5vh;
    color: #c6c6c6;
    -webkit-touch-callout: none;
    -webkit-user-select: none;
@@ -161,7 +167,7 @@ img {
 }
 
 .top #main .gap2 {
-   height: 18vh;
+   height: 3vh;
 }
 
 .design_value {
