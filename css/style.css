@@ -143,12 +143,12 @@ img {
 
 .top #main #name {
    display: flex;
-   font-size: 12vh;
+   font-size: 12vw;
 }
 
 .top #main #info {
    display: flex;
-   font-size: 4vh;
+   font-size: 4vw;
 }
 
 .top #main #keyboard_arrow_down {
@@ -215,8 +215,8 @@ img {
    display: inline-grid;
    align-self: center;
    justify-self: center;
-   grid-template-columns: repeat(3, clamp(42.5px,10vw,500px));
-   grid-template-rows: repeat(2, clamp(42.5px,10vw,500px));
+   grid-template-columns: repeat(3, clamp(42.5px, 10vw, 500px));
+   grid-template-rows: repeat(2, clamp(42.5px, 10vw, 500px));
    grid-gap: 1vw;
 }
 
@@ -363,8 +363,8 @@ img {
    left: 0vw;
    position: relative;
    display: inline-grid;
-   grid-template-columns: repeat(5, clamp(30px,6vw,1000px));
-   grid-template-rows: repeat(5, clamp(30px,6vw,1000px));
+   grid-template-columns: repeat(5, clamp(30px, 6vw, 1000px));
+   grid-template-rows: repeat(5, clamp(30px, 6vw, 1000px));
    grid-gap: 4.5vw;
 }
 
@@ -599,7 +599,7 @@ img {
    top: 0;
    z-index: -1;
    height: 100%;
-   width: clamp(102.5px, 30%,1000px);
+   width: clamp(102.5px, 30%, 1000px);
    background-color: #D9F0E9;
 }
 
