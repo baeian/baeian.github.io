@@ -38,7 +38,7 @@ footer p {
    border-bottom: 0.75px solid rgba(0, 0, 0, 15%);
    border-bottom-left-radius: 1.5vh;
    border-bottom-right-radius: 1.5vh;
-   padding: 0 2.5%;
+   padding: 0 2vh;
 }
 
 .menu .list a {
@@ -140,14 +140,12 @@ img {
 
 .top #main #name {
    display: flex;
-   font-size: 8vh;
-   letter-spacing: -0.75vw;
+   font-size: 10vh;
 }
 
 .top #main #info {
    display: flex;
    font-size: 4vh;
-   letter-spacing: -0.3vw;
 }
 
 .top #main #keyboard_arrow_down {
@@ -212,10 +210,11 @@ img {
 
 #people {
    display: inline-grid;
-   margin-top: 5%;
-   grid-template-columns: repeat(3, clamp(42.5px, 10vw, 1000px));
-   grid-template-rows: repeat(2, clamp(42.5px, 10vw, 1000px));
-   grid-gap: 0.75vw;
+   align-self: center;
+   justify-self: center;
+   grid-template-columns: repeat(3, clamp(42.5px,10vw,500px));
+   grid-template-rows: repeat(2, clamp(42.5px,10vw,500px));
+   grid-gap: 1vw;
 }
 
 .person {
@@ -351,8 +350,7 @@ img {
 }
 
 .design_value .card_wrap .box3 .text_wrap {
-   text-align: center;
-   padding: 3vw 2vw 0px 2vw;
+   padding: 3vw 2vw 1vw 2vw;
 }
 
 .design_value .card_wrap .box2 .img_wrap {
@@ -361,8 +359,8 @@ img {
    left: 0vw;
    position: relative;
    display: inline-grid;
-   grid-template-columns: repeat(5, 6vw);
-   grid-template-rows: repeat(5, 6vw);
+   grid-template-columns: repeat(5, clamp(30px,6vw,1000px));
+   grid-template-rows: repeat(5, clamp(30px,6vw,1000px));
    grid-gap: 4.5vw;
 }
 
@@ -499,7 +497,7 @@ img {
    display: block;
    padding: 6.5vw 2vw;
    position: absolute;
-   width: 24.5%;
+   width: clamp(100px,25%,1000px);
 }
 
 .skill .card_wrap .box1 {
@@ -608,7 +606,7 @@ img {
    top: 0;
    z-index: -1;
    height: 100%;
-   width: 30%;
+   width: clamp(102.5px, 30%,1000px);
    background-color: #D9F0E9;
 }
 
