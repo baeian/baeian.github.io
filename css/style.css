@@ -68,6 +68,9 @@ footer p {
 }
 
 .sub {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
    z-index: 3;
    text-align: left;
    font-size: clamp(20px, 3.5vw, 45px);
@@ -140,7 +143,7 @@ img {
 
 .top #main #name {
    display: flex;
-   font-size: 10vh;
+   font-size: 12vh;
 }
 
 .top #main #info {
@@ -245,6 +248,7 @@ img {
 .address .box1 {
    grid-column: 1/3;
    grid-row-start: 1;
+
 }
 
 .design_value h1 {
@@ -497,7 +501,7 @@ img {
    display: block;
    padding: 6.5vw 2vw;
    position: absolute;
-   width: clamp(100px,25%,1000px);
+   width: 100%;
 }
 
 .skill .card_wrap .box1 {
@@ -547,25 +551,14 @@ img {
    right: -5%;
 }
 
-.address .box1 .img_wrap {
-   display: flex;
-   position: relative;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   flex-direction: row;
-   top: 0;
-   left: 30%;
-   width: 70%;
-   height: 100%;
-}
-
 .address .box1 .insta_github_notion {
    position: absolute;
    display: inline-grid;
-   grid-template-columns: repeat(3, clamp(50px, 10vw, 200px));
-   grid-template-rows: clamp(50px, 10vw, 200px);
+   grid-template-columns: repeat(3, clamp(45px, 10vw, 200px));
+   grid-template-rows: clamp(45px, 10vw, 200px);
    grid-gap: 4.5vw;
+   right: 5vw;
+   top: 35%;
 }
 
 #instagram {
